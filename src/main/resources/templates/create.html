@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit province</title>
+</head>
+<body>
+
+<form th:action="@{/create}" th:object="${city}" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" th:field="*{name}"/></td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td><input type="text" th:field="*{country}"/></td>
+        </tr>
+        <tr>
+            <td>Area:</td>
+            <td><input type="text" th:field="*{area}"/></td>
+        </tr>
+        <tr>
+            <td>Population:</td>
+            <td><input type="text" th:field="*{population}"/></td>
+        </tr>
+        <tr>
+            <td>Decription:</td>
+            <td><input type="text" th:field="*{dicreption}"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit">Create City</td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
