@@ -56,7 +56,7 @@ public class CityController {
     @GetMapping("/view/{idCity}")
     public ModelAndView viewDetail(@PathVariable("idCity") Long id) {
         City city = cityService.findById(id);
-        ModelAndView viewDetail = new ModelAndView("/detail");
+        ModelAndView viewDetail = new ModelAndView("detail");
         viewDetail.addObject("city", city);
         return viewDetail;
     }

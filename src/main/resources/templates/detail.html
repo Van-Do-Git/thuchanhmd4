@@ -5,30 +5,28 @@
     <title>Edit province</title>
 </head>
 <body>
-<th:block th:each="c : ${city}">
     <table>
         <tr>
             <td>Name:</td>
-            <td type="text" th:text="*${c.name}"></td>
+            <td type="text" th:text="${city.name}"></td>
         </tr>
         <tr>
             <td>Country:</td>
-            <td type="text" th:text="*${c.country}"></td>
+            <td type="text" th:text="${city.country}"></td>
         </tr>
         <tr>
             <td>Area:</td>
-            <td type="text" th:text="*${c.area}"></td>
+            <td  th:text="${city.area}"></td>
         </tr>
         <tr>
             <td>Population:</td>
-            <td type="text" th:text="*${c.population}"></td>
+            <td th:text="${city.population}"></td>
         </tr>
         <tr>
             <td>Decription:</td>
-            <td type="text" th:text="*${c.dicreption}"></td>
+            <td type="text" th:text="${city.dicreption}"></td>
         </tr>
     </table>
-</th:block>
 </form>
 </body>
 </html>
